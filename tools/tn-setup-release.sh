@@ -106,9 +106,7 @@ imx8*|imx9*)
             : true
             ;;
         *)
-            echo -e "\n ERROR - Only Wayland distros are supported for i.MX 8 or i.MX 8M"
-            echo -e "\n"
-            return 1
+            echo -e "\n WARNING - NXP recommends Wayland distros for i.MX 8 or i.MX 8M. Continuing anyway..."
             ;;
         esac
     fi

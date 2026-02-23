@@ -129,25 +129,18 @@ if [ ${TNCONFIGS} != 0 -o ${FSLCONFIGS} != 0 ]; then
       echo -e "\n# setup i.MX Yocto Project Release layers in bblayers.conf" | tee -a $PWD/conf/bblayers.conf
       hook_in_layer meta-imx/meta-imx-bsp
       hook_in_layer meta-imx/meta-imx-sdk
-      hook_in_layer meta-imx/meta-imx-ml
       hook_in_layer meta-imx/meta-imx-v2x
-      hook_in_layer meta-nxp-demo-experience
       hook_in_layer meta-arm/meta-arm
       hook_in_layer meta-arm/meta-arm-toolchain
       hook_in_layer meta-security
       hook_in_layer meta-security/meta-tpm
       hook_in_layer meta-security/meta-parsec
-      hook_in_layer meta-freescale-ml
 
       echo "" >> $PWD/conf/bblayers.conf
-      echo "BBLAYERS += \"\${BSPDIR}/sources/meta-browser/meta-chromium\"" >> $PWD/conf/bblayers.conf
       echo "BBLAYERS += \"\${BSPDIR}/sources/meta-clang\"" >> $PWD/conf/bblayers.conf
-      echo "BBLAYERS += \"\${BSPDIR}/sources/meta-openembedded/meta-gnome\"" >> $PWD/conf/bblayers.conf
       echo "BBLAYERS += \"\${BSPDIR}/sources/meta-openembedded/meta-networking\"" >> $PWD/conf/bblayers.conf
       echo "BBLAYERS += \"\${BSPDIR}/sources/meta-openembedded/meta-filesystems\"" >> $PWD/conf/bblayers.conf
       echo "BBLAYERS += \"\${BSPDIR}/sources/meta-openembedded/meta-perl\"" >> $PWD/conf/bblayers.conf
-
-      echo "BBLAYERS += \"\${BSPDIR}/sources/meta-qt6\"" >> $PWD/conf/bblayers.conf
 
       # Enable docker for mx8 machines
       echo "BBLAYERS += \"\${BSPDIR}/sources/meta-virtualization\"" >> conf/bblayers.conf
