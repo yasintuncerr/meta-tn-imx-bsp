@@ -43,3 +43,14 @@ IMAGE_FEATURES += "package-management"
 
 # Desktop/Interface packages
 IMAGE_FEATURES:remove = "x11-base x11-sato wayland"
+
+IMAGE_INSTALL:remove = " \
+    tn-apt-list \
+    vizionsdk-dev \
+    vizionviewer \
+    packagegroup-tn-tools \
+    packagegroup-tn-vizionsdk \
+    packagegroup-tn-wlan \
+    get-support-info \
+    glmark2 \
+"
