@@ -1,5 +1,9 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/file:"
 
+# --- NXP Orijinal 960MB CMA Değerini Geri Getiren Yama ---
+SRC_URI += "file://0001-restore-nxp-cma-960m.patch"
+# ---------------------------------------------------------
+
 SRC_URI:append:rescue = " \
        file://logo.ppm \
        file://rescue-fragment.cfg \
