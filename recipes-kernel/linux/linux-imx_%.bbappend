@@ -1,5 +1,8 @@
 FILESEXTRAPATHS:prepend := "${THISDIR}/file:"
 
+
+SRC_URI += "file://0001-restore-nxp-cma-960m.patch"
+
 SRC_URI:append:tn-camera = " \
        file://tn-camera.cfg \
        "
