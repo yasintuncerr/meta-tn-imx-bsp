@@ -1,11 +1,11 @@
 --- a/arch/arm64/boot/dts/freescale/imx8mp.dtsi
 +++ b/arch/arm64/boot/dts/freescale/imx8mp.dtsi
 @@ -197,7 +197,7 @@
-        linux,cma {
-            compatible = "shared-dma-pool";
-            reusable;
--           size = <0 0x06000000>;
-+           size = <0 0x32000000>;
-            alloc-ranges = <0 0x40000000 0 0xC0000000>;
-            linux,cma-default;
-        };
+ 		linux,cma {
+ 			compatible = "shared-dma-pool";
+ 			reusable;
+-			size = <0 0x06000000>;
++			size = <0 0x32000000>;
+ 			alloc-ranges = <0 0x40000000 0 0xC0000000>;
+ 			linux,cma-default;
+ 		};
