@@ -9,3 +9,4 @@
  			alloc-ranges = <0 0x40000000 0 0xC0000000>;
  			linux,cma-default;
  		};
+        
